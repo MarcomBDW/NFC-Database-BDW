@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Digital Card</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:#f5f5f5;
+      margin:0;
+      padding:24px;
+    }
+    .card {
+      max-width:460px;
+      margin:0 auto;
+      background:#fff;
+      border-radius:14px;
+      padding:20px 20px 16px;
+      box-shadow:0 4px 18px rgba(0,0,0,.04);
+      text-align:center;
+    }
+    .logo-wrap {
+      width:200px;
+      height:75px;
+      margin:0 auto 16px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:10px;
+      overflow:hidden;
+    }
+    .logo-wrap img {
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+    }
+    .avatar-wrap {
+      width:200px;
+      height:200px;
+      margin:0 auto 16px;
+      border-radius:50%;
+      overflow:hidden;
+      background:#e9eef3;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .avatar-wrap img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    h1 {
+      font-size:1.3rem;
+      margin:0 0 4px;
+    }
+    .role {
+      color:#444;
+      margin-bottom:4px;
+      font-size:.9rem;
+    }
+    .org-line {
+      color:#666;
+      margin-bottom:16px;
+      font-size:.8rem;
+    }
+
+    .links {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      text-align:left;
+    }
+    .links a {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      background:#e9eef3;          /* default */
+      color:#111;
+      text-decoration:none;
+      border-radius:9999px;
+      padding:12px 20px;
+      transition:background .15s ease, color .15s ease;
+    }
+    .links a:hover,
+    .links a:active {
+      background:#0000FF;          /* hover/click */
+      color:#fff;
+    }
+    .icon-box {
+      width:28px;
+      height:28px;
+      border:1.4px solid currentColor;
+      border-radius:7px;
+      flex:0 0 28px;
+    }
+    .link-text {
+      display:flex;
+      flex-direction:column;
+      line-height:1.05;
+    }
+    .link-label {
+      font-size:.65rem;
+      opacity:.9;
+    }
+    .link-value {
+      font-size:.9rem;
+      font-weight:500;
+      word-break:break-all;
+    }
+
+    footer {
+      text-align:center;
+      margin-top:14px;
+      font-size:.7rem;
+      color:#aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-wrap">
+      <img src="https://files.catbox.moe/n5j29i.png" alt="Company logo">
+    </div>
+    <div class="avatar-wrap">
+      <img src="https://files.catbox.moe/farns2.jpg" alt="Profile photo">
+    </div>
+    <h1>Sheriza Zakaria</h1>
+    <div class="role">Head, Solution Architect | Technology</div>
+    <div class="org-line">Big Dataworks Sdn Bhd | Kuala Lumpur</div>
+
+    <div class="links">
+      <!-- Exchange Contact -->
+      <a href="tel:+60179381990">
+        <span class="icon-box"></span>
+        <span class="link-text">
+          <span class="link-label">Exchange Contact</span>
+          <span class="link-value">017 938 1990</span>
+        </span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:akmal.yusoff@bigdataworks.com.my">
+        <span class="icon-box"></span>
+        <span class="link-text">
+          <span class="link-label">Work Email</span>
+          <span class="link-value">akmak.yusoff@bigdataworks.com.my</span>
+        </span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/60179381990">
+        <span class="icon-box"></span>
+        <span class="link-text">
+          <span class="link-label">WhatsApp</span>
+          <span class="link-value">https://wa.me/60179381990</span>
+        </span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/">
+        <span class="icon-box"></span>
+        <span class="link-text">
+          <span class="link-label">LinkedIn</span>
+          <span class="link-value">www.linkedin.com/company/bigdataworks/</span>
+        </span>
+      </a>
+    </div>
+
+    <footer>© 2025 BIGDATAWORKS</footer>
+  </div>
+</body>
+</html>
